@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="app.js"></script>
+    <title>Encriptador de texto </title>
+</head>
+<body>
+    <textarea id="textoEncriptado">Esto es un área de texto</textarea>
+    <textarea id="textoDesencriptado">Esto es otra área de texto</textarea>
+    <button name="cifrar" id="botonCifrado">Cifrar</button>
+    <button name="descifrar" id="botonDecifrado">Descifrar</button>
+    <button name="copiar" id="botonCopiado">Copiar</button>
+
+    <footer>Proyecto hecho por: Ortega Ramírez Diana Lizbeth</footer>
+</body>
+<script>
+    var btnCifrar = document.querySelector("#botonCifrado");
+    btnCifrar.onclick = encriptar;
+
+    var btnDescifrado = document.querySelector("#botonDecifrado");
+    btnDescifrado.onclick = desencriptar;
+
+    var btnCopiado = document.querySelector("#botonCopiado");
+    btnCopiado.onclick = copiar;
+</script>
+</html>
